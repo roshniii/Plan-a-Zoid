@@ -716,6 +716,10 @@ body.light-mode .video-bg:before {
   transform: scale(1);
 }
 
+.schedule .app-card:hover{
+  transform: scale(1);
+}
+
 /* .app-card + .app-card {
   margin-left: 20px;
 } */
@@ -838,7 +842,7 @@ input::-moz-focus-inner {
   padding: 20px;
   position: absolute;
   top: 410px;
-  left: 410px;
+  right: -90px;
   transform: translate(-50%, -50%);
   background-color: var(--theme-bg-color);
   text-align: center;
@@ -864,6 +868,7 @@ input::-moz-focus-inner {
 }
 
 .modal-close:hover {
+  color: #1e59f1;
   transform: scale(1.02);
   background-color: var(--theme-bg-color);
 }

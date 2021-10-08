@@ -1,0 +1,17 @@
+.schedule-item {
+    margin-bottom: 10px;
+}
+
+
+.task {
+    display: flex;
+justify-content: start;
+align-items: center;
+}
+
+.session{
+    border-radius: 14px;
+    border: 1px solid var(--theme-bg-color);
+    margin: 6px;
+    padding: 5px;
+}

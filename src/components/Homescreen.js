@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "./Header";
 import DarkLight from "./DarkLight";
-import AddSchedule from "./AddSchedule";
+import AddSchedule from "./Schedule/AddSchedule";
 import Timer from "./Timer";
 import MusicPlayer from "./MusicPlayer/MusicPlayer";
 import Navigation from "./Navigation";

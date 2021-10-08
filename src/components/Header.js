@@ -1,17 +1,22 @@
 import React from 'react'
-
+import { useState, useEffect } from 'react';
+ 
 const Header = () => {
 
-  // get a new date (locale machine date time)
+
+  // date
 var date = new Date();
-// get the date as a string
 var n = date.toDateString();
 
+// time 
+const [clockState, setClockState] = useState();
 
-// time script
-
-var today = new Date(),
- time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+useEffect(() => {
+  setInterval(() => {
+    const date = new Date();
+    setClockState(date.toLocaleTimeString());
+  }, 1000);
+}, []);
 
 
     return (
@@ -33,7 +38,7 @@ var today = new Date(),
                 </div>
                 <div className="time">
                   <button id="time">
-                    {time}
+                  {clockState}
                   </button>
                 </div>
               
