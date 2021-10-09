@@ -738,9 +738,11 @@ body.light-mode .video-bg:before {
 }
 .app-card-buttons {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-top: 16px;
+  /* margin-left: auto; */
+
+  margin: 10px;
 }
 
 .app-card svg{

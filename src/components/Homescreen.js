@@ -8,7 +8,9 @@ import MusicPlayer from "./MusicPlayer/MusicPlayer";
 import Navigation from "./Navigation";
 import "./homescreen.css";
 
-const Homescreen = () => {
+const Homescreen = (props) => {
+
+
   return (
     <React.Fragment>
       <div className="container">
@@ -19,8 +21,9 @@ const Homescreen = () => {
             <div className="main-container">
               <div className="content-wrapper">
                 <div className="row">
-                  <AddSchedule />
+                  <AddSchedule items={props.items}/>
                   <Timer />
+                  
                 </div>
 
                 {/* <!-- bottom row --> */}

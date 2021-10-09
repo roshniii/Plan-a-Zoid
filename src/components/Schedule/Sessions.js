@@ -1,13 +1,15 @@
 import React from "react";
 
-const sessions = () => {
+const sessions = (props) => {
+
+  console.log(props.items.session)
   return (
     <React.Fragment>
       <div className="col-3 session">
         <div className="col-12 session-title">
-          <p>Session 1</p>
+          <p>Session {props.items.session}</p>
         </div>
-        <div className="col-12 session-time">12:00:00 - 12:25:00</div>
+        <div className="col-12 session-time">{props.items.start} - {props.items.end}</div>
       </div>
     </React.Fragment>
   );

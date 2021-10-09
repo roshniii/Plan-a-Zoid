@@ -57,19 +57,7 @@ const Navigation = () => {
           </a>
         </div>
 
-        <div className="side-menu " id="volume">
-          <div className="range-slider">
-            <input
-              className="input-range"
-              orient="vertical"
-              type="range"
-              step="1"
-              value="5"
-              min="1"
-              max="100"
-            ></input>
-          </div>
-        </div>
+      
       </div>
       </React.Fragment>
     )
