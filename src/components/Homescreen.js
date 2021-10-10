@@ -9,19 +9,23 @@ import Navigation from "./Navigation";
 import "./homescreen.css";
 
 const Homescreen = (props) => {
+  const saveScheduleDataHandler =(enteredScheduleData) =>{
+    props.onSaveScheduleData(enteredScheduleData)
+
+  }
 
 
   return (
     <React.Fragment>
       <div className="container">
-        <DarkLight />
+        {/* <DarkLight /> */}
         <div className=" app">
           <Header />
           <div className="wrapper">
             <div className="main-container">
               <div className="content-wrapper">
                 <div className="row">
-                  <AddSchedule items={props.items}/>
+                  <AddSchedule items={props.items} onSaveScheduleData={saveScheduleDataHandler}/>
                   <Timer />
                   
                 </div>
@@ -31,7 +35,7 @@ const Homescreen = (props) => {
                 <div className="row bottom">
                   <div className="col-5 room">
                     <div className="row">
-                      <div className="col-6 content-section">
+                      {/* <div className="col-6 content-section">
                         <a href="./room.html">
                           <div className="apps-card">
                             <div className="app-card">
@@ -39,9 +43,9 @@ const Homescreen = (props) => {
                             </div>
                           </div>
                         </a>
-                      </div>
+                      </div> */}
 
-                      <div className="col-6 content-section">
+                      {/* <div className="col-6 content-section">
                         <a href="./room.html">
                           <div className="apps-card">
                             <div className="app-card">
@@ -49,7 +53,7 @@ const Homescreen = (props) => {
                             </div>
                           </div>
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 

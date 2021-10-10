@@ -12,6 +12,6 @@ align-items: center;
 .session{
     border-radius: 14px;
     border: 1px solid var(--theme-bg-color);
-    margin: 6px;
+    margin: 3px;
     padding: 5px;
 }

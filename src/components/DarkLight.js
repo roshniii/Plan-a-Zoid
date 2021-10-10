@@ -15,7 +15,7 @@ useEffect(() => {
   return (
     <React.Fragment>
       <div className="dark-light" 
-      // onCLick={()=> setIsLight(!isLight)}
+      onCLick={()=> setIsLight(!isLight)}
       >
         <svg
           viewBox="0 0 24 24"

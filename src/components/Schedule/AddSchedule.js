@@ -11,7 +11,7 @@ const AddSchedule = (props) => {
 
   const saveScheduleDataHandler =(enteredScheduleData) =>{
     
-    // console.log(enteredScheduleData)
+     props.onSaveScheduleData(enteredScheduleData)
   }
 
   let scheduleContent = <p>No Schedule</p>;

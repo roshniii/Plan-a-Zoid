@@ -14,6 +14,12 @@ const MusicPlayer = () => {
       musicSrc: "http://physical-authority.surge.sh/music/2.mp3",
     },
     {
+    name: "blinding lights",
+    singer: "the weeknd",
+    cover: "http://physical-authority.surge.sh/imgs/2.jpg",
+    musicSrc: "http://physical-authority.surge.sh/music/2.mp3",
+  },
+    {
       name: "unforgetting",
       singer: "zaxx",
       cover:

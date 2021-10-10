@@ -3,6 +3,7 @@ import React from 'react'
 import { IconContext } from "react-icons";
 import { RiNotificationBadgeFill } from "react-icons/ri";
 import { AiTwotoneSetting } from "react-icons/ai";
+import { BsPencilSquare } from "react-icons/bs";
 
 const Navigation = () => {
     return (
@@ -28,7 +29,7 @@ const Navigation = () => {
             </div>
           </div>
 
-          <a className="btn" href="#notify-modal">
+          <a className="btn" href="homePage/#notify-modal">
             <div className="app-card">
               <span>
                 <IconContext.Provider
@@ -50,6 +51,19 @@ const Navigation = () => {
                 >
                   <div>
                     <AiTwotoneSetting />
+                  </div>
+                </IconContext.Provider>
+              </span>
+            </div>
+          </a>
+          <a href="https://jamboard.google.com/d/1CgFuADM85dgbVtLXOrbBv6f8meAwECKjj_favfFw2gk/edit?usp=sharing" target="_blank" className="btn">
+            <div className="app-card">
+              <span>
+                <IconContext.Provider
+                  value={{ color: "White", size: "35px" }}
+                >
+                  <div>
+                    <BsPencilSquare />
                   </div>
                 </IconContext.Provider>
               </span>

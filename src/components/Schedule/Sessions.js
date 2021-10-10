@@ -2,10 +2,10 @@ import React from "react";
 
 const sessions = (props) => {
 
-  console.log(props.items.session)
+  // console.log(props.items.session)
   return (
     <React.Fragment>
-      <div className="col-3 session">
+      <div className="col-4 session">
         <div className="col-12 session-title">
           <p>Session {props.items.session}</p>
         </div>

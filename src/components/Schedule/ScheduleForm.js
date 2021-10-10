@@ -21,11 +21,7 @@ const ScheduleForm = (props) => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    const scheduleData = {
-      task: enteredTask,
-      startTime: enteredStartTime,
-      endTime: enteredEndTime,
-    };
+    const scheduleData = `https://hidden-wave-10551.herokuapp.com/sch/${enteredTask}/${enteredStartTime}:00/${enteredEndTime}:00`
 
     props.onSaveScheduleData(scheduleData);
 
